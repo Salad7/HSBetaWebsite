@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.2.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.2.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.2.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.2.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+  </head>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>About</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+  <body>
+  <section class="section">
+
+    <div class="container">
+      <!-- Begin Register Flow -->
+      <img src="images/beta.png" style="display:block;margin:auto;height:120px;width:120px"></img>
+      <nav class="level" style=";margin-top:48px">
+          <div class = "level-item">
+          <div class="field" style="width:380px;">
+             <label class="label"><b>*Email:</b></label>
+           <p class="control has-icons-left">
+         <input class="input" type="text" placeholder="Enter Email" name="email"  id="email_reg" required >
+         <span class="icon is-small is-left">
+             <i class="fa fa-envelope"></i>
+           </span>
+          </div>
+          </div></nav>
+      <nav class="level">
+          <div class = "level-item">
+          <div class="field" style="width:380px;">
+              <label class="label"><b>Password</b></label>
+              <p class="control has-icons-left">
+             <input class="input" type="password" placeholder="Enter Password (6 Characters or longer)" name="psw" id="password_reg" required>
+             <span class="icon is-small is-left">
+                 <i class="fa fa-key"></i>
+               </span>
+          </div>
+          </div>
+      </nav>
+      <div class="level-item" style="margin-top:16px">
+       <button class="button is-primary" style="width:380px"  type="submit" id="register" onclick="register()">Register</button>
+      </div>
+      <!-- End Register Flow -->
+  </div>
+  </section>
+
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>BETA</strong> by Yurp, Inc. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      Contact us at yurpinc@gmail.com
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
