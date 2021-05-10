@@ -1,0 +1,28 @@
+1) Signup on website
+2) Add links of job postings
+  - Automate sign in process
+  - Get list of available positions
+  - Get list of locations
+
+  Nike
+
+  Jobs in Charlotte
+  https://jobs.nike.com/?jobSearch=true&jsLocation%5B0%5D=4460243&jsOffset=0&jsSort=posting_start_date&jsLanguage=en
+
+  Did user sign up already?
+
+  Yes -- Login them in,
+  No -- Signup
+
+
+  Signup
+  - Privacy Agreement [Accept] id = dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton
+  - New userid = dialogTemplate-dialogForm-login-register
+  - New user registration
+    - username id = dialogTemplate-dialogForm-userName
+    - password = dialogTemplate-dialogForm-password
+    - retype password = dialogTemplate-dialogForm-passwordConfirm
+    - register button =
+  - Redirect to job registration
+
+  
