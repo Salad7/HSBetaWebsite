@@ -1,0 +1,275 @@
+Operation Nike
+
+Get the 3 links for the retail jobs in charlotte
+Get the steps to creating an account or if already signed up, create an account
+For each link, get the details required
+
+
+Sample Job
+
+https://nike.taleo.net/careersection/10100/mysubmissions.ftl?job=203_NIKE_SEAS_EVG&lang=en&languageCode=en&countryCode=US&countryName=United%20States
+
+Note, after signing in there is new link for job
+
+1) Privacy Policy
+
+v = docment.getElementsByName(DialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton)[0]
+v.click()
+
+
+2)Sign In Form, check if user already created account
+
+If Account already created,
+v = document.getElementById("dialogTemplate-dialogForm-login-name1")
+v.value = "username"
+
+v = docment.getElementById("dialogTemplate-dialogForm-login-password")
+v.value = "password"
+
+v = document.getElementById("dialogTemplate-dialogForm-login-defaultCmd")
+v.click()
+
+2B) Else account not created. Create Account
+
+v = document.getElementById("dialogTemplate-dialogForm-login-register")
+v.click()
+
+Register via site
+userName
+v = document.getElementById("dialogTemplate-dialogForm-userName")
+v.value = "test32123123123"
+
+password
+v = document.getElementById("dialogTemplate-dialogForm-password")
+v.value = "123@lmfao2!"
+
+duplicate Password
+v = document.getElementById("dialogTemplate-dialogForm-passwordConfirm")
+
+v = document.getElementById("dialogTemplate-dialogForm-defaultCmd")
+v.click()
+
+Redirect to Jobs page
+Link: https://nike.taleo.net/careersection/10100m/jobapply.ftl?job=203_NIKE_FT_EVG&lang=en&languageCode=en&countryCode=US&countryName=United%20States
+
+------------------Check If user has resume-------------------------------
+
+Click "I want to upload resume"
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-ResumeParsingBlock-UploadResumeBlock-resumeUploadRadio_2")
+v.click()
+
+Click choose file
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-ResumeParsingBlock-UploadResumeBlock-ResumeUploadInputFile")
+
+Type resume name
+Am i going to have to include mouse here? (Visual Studio)
+
+------------------Else If user does not has resume-------------------------------
+
+Click "Do not want to upload resume"
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-ResumeParsingBlock-UploadResumeBlock-skipResumeUploadRadio_1")
+v.click()
+--------------------------------------------------------------------------------
+
+Save and Continue
+v = document.getElementsByName("editTemplateMultipart-editForm-content-ftf-saveContinueCmdBottom")
+v[0].click()
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+First Name
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_FirstName")
+v.value = "John"
+
+
+Last Name
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_LastName")
+v.value = "Smith"
+
+Street Address
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_Address")
+v.value = "3321 Hapsburg Ln"
+
+City
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_City")
+v.value = "Charlotte"
+
+Zip
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_ZipCode")
+v.value = "28262"
+
+Country
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_ResidenceLocation-0")
+v.selectedIndex = 1
+
+State
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_ResidenceLocation-1")
+v.selectedIndex = 35
+
+Closest Metropolitin Area
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_ResidenceLocation-2")
+v.selectedIndex = 4
+
+Cell number
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_MobilePhone")
+v.value = "9802859495"
+
+Primary number
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_PreferredPhone")
+v.selectedIndex = 3
+
+Email
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-cpi-cfrmsub-frm-dv_cs_candidate_personal_info_EmailAddress")
+v.value = "admin@latteapp.com"
+
+Source Type
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-sourceTrackingBlock-recruitmentSourceType")
+v.selectedIndex = 2
+
+Career Site
+v = document.getElementById("recruitmentSourceDP")
+v.selectedIndex = 4
+
+Save and Continue
+v = document.getElementById("et-ef-content-ftf-saveContinueCmdBottom")
+v.click()
+--------------------------------------------------------------------------------------------------------------
+
+Work Experience
+
+Employer:
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_Employer")
+v.value = "Kublah Khans"
+
+Start Month
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_BeginDate.month")
+v.selectedIndex = 1
+
+
+Start Year
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_BeginDate.year")
+v.selectedIndex = 1
+
+End Month
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_EndDate.month")
+v.selectedIndex = 2
+
+End Year
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_EndDate.year")
+v.selectedIndex = 1
+
+
+Accomplishments
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_Responsibility")
+v.value = "Im the best"
+
+Reason for leaving
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-we-wei-0-frm-dv_cs_experience_UDFExperience_Reason_32_For_32_Leaving")
+v.value = "Im the goat"
+
+Education
+
+Institution
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-csef-efi-0-frm-dv_cs_education_Institution")
+v.value = "Vance High school"
+
+Education Level
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-csef-efi-0-frm-dv_cs_education_StudyLevel")
+v.selectedIndex = 2
+
+Save & Continue
+v = document.getElementById("et-ef-content-ftf-saveContinueCmdBottom")
+v.click()
+
+-----------------------------------------If you have resume to submit---------------------------------------------
+
+choose file button
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-AttachedFilesBlock-uploadedFile")
+v.click()
+
+Attach button
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-AttachedFilesBlock-attachFileCommand")
+v.click()
+
+Flag as resume
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-gp-j_id_id16pc8-page_0-AttachedFilesBlock-j_id_id34pc9:0:resumeselectionid")
+v.click()
+
+Save & Continue
+v = document.getElementById("editTemplateMultipart-editForm-content-ftf-saveContinueCmdBottom")
+v.click()
+
+---------------------------------------------------------------------------------------------------------------------
+
+Questionare
+
+Are you atleast 18
+
+If yes
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__982048")
+v.click()
+
+If No
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__982049")
+v.click()
+
+Are you legally Authorized to work in the us?
+If Yes
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-1-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1119233")
+v.click()
+
+If No
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-1-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1119234")
+v.click()
+
+Have you been ever employed by Nike or Affiliates
+
+If yes as an employee
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__632221")
+v.click()
+
+If yes as a contractor
+v = document.getElementById("et-ef-cov = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__632222")
+v.click()
+
+If no
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__632223")
+v.click()
+
+Does require Sponsership?
+If yes
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-3-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1119980")
+v.click()
+
+If no
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-3-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1119981")
+v.click()
+
+
+I will require sponsership
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-4-qsl")
+v.selectedIndex = 1
+
+Save & Continue
+v = document.getElementById("et-ef-content-ftf-saveContinueCmdBottom")
+v.click()
+
+--------------------------------------Questionare Continued--------------------------------------------
+
+If applicable, indicate how many months are remaining on your visa term before you reach your max-out-date? (Approved I-140 select “Not Applicable”)
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qsl")
+v.selectedIndex = 1
+
+J-1 Applicants: Are you eligible to seek secondary employment without restrictions on your J-1 visa?
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-1-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1136914")
+v.click()
+J-1 Applicants: I am in the U.S. in J-1 visa status and able to work for NIKE as my secondary employer without restrictions:
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1138427")
+v.click()
