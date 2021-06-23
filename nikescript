@@ -11,7 +11,7 @@ https://nike.taleo.net/careersection/10100/mysubmissions.ftl?job=203_NIKE_SEAS_E
 
 Note, after signing in there is new link for job
 
-1) Privacy Policy
+1) Privacy Policy (Check if u get privacy policy)
 
 v = docment.getElementsByName(DialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton)[0]
 v.click()
@@ -270,6 +270,102 @@ v.selectedIndex = 1
 J-1 Applicants: Are you eligible to seek secondary employment without restrictions on your J-1 visa?
 v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-1-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1136914")
 v.click()
+
 J-1 Applicants: I am in the U.S. in J-1 visa status and able to work for NIKE as my secondary employer without restrictions:
 v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-koq-j_id_id7pc10-page__1-q-j_id_id2pc11-2-qr_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__1138427")
 v.click()
+
+Save & Continue
+v = document.getElementById("et-ef-content-ftf-saveContinueCmdBottom")
+v.click()
+
+--------------------------------------------Availability------------------------------------------------------
+
+Please indicate all shifts that you are willing and able to work:
+If Days
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-preq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qc_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__598944")
+v.click()
+
+If Nights
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-preq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qc_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__598943")
+v.click()
+
+If Weekends
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-preq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qc_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__598942")
+v.click()
+
+If Holidays
+
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_0-preq-j_id_id7pc10-page__1-q-j_id_id2pc11-0-qc_com.taleo.functionalcomponent.prescreening.entity.question.PossibleAnswer__598941")
+v.click()
+
+Shift Availability Grid
+
+
+Early Morning
+Monday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-0:checkbox_shiftAvailability")
+v.checked = true
+
+Tuesday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-1:checkbox_shiftAvailability")
+v.checked = true
+
+
+Wednsday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-2:checkbox_shiftAvailability")
+v.checked = true
+
+
+Thursday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-3:checkbox_shiftAvailability")
+v.checked = true
+
+
+Friday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-4:checkbox_shiftAvailability")
+v.checked = true
+
+Saturday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-5:checkbox_shiftAvailability")
+v.checked = true
+
+Sunday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-0-shiftAvailabilityPeriodIter-6:checkbox_shiftAvailability")
+v.checked = true
+
+
+Mid Day
+Monday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-0:checkbox_shiftAvailability")
+v.checked = true
+
+Tuesday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-1:checkbox_shiftAvailability")
+v.checked = true
+
+
+Wednsday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-2:checkbox_shiftAvailability")
+v.checked = true
+
+
+Thursday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-3:checkbox_shiftAvailability")
+v.checked = true
+
+
+Friday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-4:checkbox_shiftAvailability")
+v.checked = true
+
+Saturday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-5:checkbox_shiftAvailability")
+v.checked = true
+
+Sunday
+v = document.getElementById("et-ef-content-ftf-gp-j_id_id16pc9-page_1-shiftAvailabilityBlock-shiftAvailabilityDayIter-1-shiftAvailabilityPeriodIter-6:checkbox_shiftAvailability")
+v.checked = true

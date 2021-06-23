@@ -12,5 +12,19 @@
         "destination": "/index.html"
       }
     ]
-  }
+  },
+  "functions": {
+    "runtime": "nodejs12"
+  },
+  "redirects": [
+    {
+    "source": "/login",
+    "type": 302,
+    "destination" : "/login.html"
+  },
+  {
+  "source": "/register",
+  "type": 302,
+  "destination" : "/register.html"
+}]
 }
